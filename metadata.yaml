@@ -1,4 +1,6 @@
 homepage: 'https://stape.io/'
 versions:
+  - sha: f4db1ac7c250f89ea264b708d874d6bc5371c5b1
+    changeNotes: Add encoding of URL parameters.
   - sha: b20a63089ace2064f8c58fcd977be46b14df7180
     changeNotes: Initial release.
