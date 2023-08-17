@@ -57,10 +57,10 @@ switch (eventName) {
       }
 
       if (data.otherParam) {
-        requestUrl = requestUrl + '&other=' + data.otherParam;
+        requestUrl = requestUrl + '&other=' + enc(data.otherParam);
       }
 
-      requestUrl = requestUrl + '&sspdata=' + token;
+      requestUrl = requestUrl + '&sspdata=' + enc(token);
 
       if (isLoggingEnabled) {
         logToConsole(
