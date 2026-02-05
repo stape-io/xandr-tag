@@ -1,18 +1,28 @@
-﻿const sendHttpRequest = require('sendHttpRequest');
-const setCookie = require('setCookie');
-const parseUrl = require('parseUrl');
-const JSON = require('JSON');
-const getRequestHeader = require('getRequestHeader');
-const encodeUriComponent = require('encodeUriComponent');
+﻿const encodeUriComponent = require('encodeUriComponent');
+const getAllEventData = require('getAllEventData');
+const getContainerVersion = require('getContainerVersion');
 const getCookieValues = require('getCookieValues');
 const getEventData = require('getEventData');
-const getAllEventData = require('getAllEventData');
+const getRequestHeader = require('getRequestHeader');
+const getType = require('getType');
+const JSON = require('JSON');
 const logToConsole = require('logToConsole');
-const getContainerVersion = require('getContainerVersion');
+const makeString = require('makeString');
+const parseUrl = require('parseUrl');
+const sendHttpRequest = require('sendHttpRequest');
+const setCookie = require('setCookie');
+
+/*==============================================================================
+==============================================================================*/
+
+const eventData = getAllEventData();
+
+if (!isConsentGivenOrNotRequired(data, eventData)) {
+  return data.gtmOnSuccess();
+}
 
 const isLoggingEnabled = determinateIsLoggingEnabled();
 const traceId = getRequestHeader('trace-id');
-const eventData = getAllEventData();
 const eventName = eventData.event_name;
 
 const PAGE_VIEW_EVENT = data.pageViewEvent || 'page_view';
@@ -30,7 +40,7 @@ switch (eventName) {
           domain: 'auto',
           path: '/',
           secure: true,
-          httpOnly: true,
+          httpOnly: true
         };
 
         if (data.expiration > 0) options['max-age'] = data.expiration;
@@ -70,7 +80,7 @@ switch (eventName) {
             TraceId: traceId,
             EventName: 'Conversion',
             RequestMethod: 'GET',
-            RequestUrl: requestUrl,
+            RequestUrl: requestUrl
           })
         );
       }
@@ -87,7 +97,7 @@ switch (eventName) {
                 EventName: 'Conversion',
                 ResponseStatusCode: statusCode,
                 ResponseHeaders: headers,
-                ResponseBody: body,
+                ResponseBody: body
               })
             );
           }
@@ -109,9 +119,20 @@ switch (eventName) {
     break;
 }
 
+/*==============================================================================
+  Helpers
+==============================================================================*/
+
 function enc(data) {
-  data = data || '';
-  return encodeUriComponent(data);
+  if (['null', 'undefined'].indexOf(getType(data)) !== -1) data = '';
+  return encodeUriComponent(makeString(data));
+}
+
+function isConsentGivenOrNotRequired(data, eventData) {
+  if (data.adStorageConsent !== 'required') return true;
+  if (eventData.consent_state) return !!eventData.consent_state.ad_storage;
+  const xGaGcs = eventData['x-ga-gcs'] || ''; // x-ga-gcs is a string like "G110"
+  return xGaGcs[2] === '1';
 }
 
 function determinateIsLoggingEnabled() {

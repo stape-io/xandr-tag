@@ -1,4 +1,5 @@
 homepage: 'https://stape.io/'
+documentation: 'https://github.com/stape-io/xandr-tag'
 versions:
   - sha: f4db1ac7c250f89ea264b708d874d6bc5371c5b1
     changeNotes: Add encoding of URL parameters.
