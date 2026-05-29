@@ -1,6 +1,8 @@
 homepage: 'https://stape.io/'
 documentation: 'https://github.com/stape-io/xandr-tag'
 versions:
+  - sha: 28f194a4d517c0c3720b1f181ba8996dc556498f
+    changeNotes: Logging removal.
   - sha: c7f349fc55402b5b9d2990265743d64329bcddb9
     changeNotes: Add consent section.
   - sha: f4db1ac7c250f89ea264b708d874d6bc5371c5b1
