@@ -1,8 +1,8 @@
 # Xandr tag for Google Tag Manager Server Side
 
-There are two types of events that Xandr tag supports: PageView and Conversion. 
+There are two types of events that Xandr tag supports: PageView and Conversion.
 
-- **PageView event** stores the token URL parameter inside the xandr_token cookie. 
+- **PageView event** stores the token URL parameter inside the xandr_token cookie.
 - **Conversion event** sends the HTTP request with the specified conversion data to Xandr.
 
 ## How to use the Xandr tag:
@@ -18,8 +18,10 @@ There are two types of events that Xandr tag supports: PageView and Conversion.
 
 **Other** - You can include an extra field to pass into your pixel and then see this data in conversion reporting.
 
-## Useful link:
-- https://stape.io/blog/how-to-set-up-xandr-tag-using-server-google-tag-manager 
+## Useful Resources
+
+- https://stape.io/blog/how-to-set-up-xandr-tag-using-server-google-tag-manager
+
 ## Open Source
 
 Xandr Tag for GTM Server Side is developed and maintained by [Stape Team](https://stape.io/) under the Apache 2.0 license.
