@@ -19,7 +19,7 @@ ___INFO___
     "displayName": "stape-io",
     "thumbnail": "data:image/png;base64,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\u003d"
   },
-  "description": "Xandr server side conversion tracking",
+  "description": "Xandr server side conversion tracking.",
   "containerContexts": [
     "SERVER"
   ]
@@ -150,34 +150,6 @@ ___TEMPLATE_PARAMETERS___
         "defaultValue": "optional"
       }
     ]
-  },
-  {
-    "type": "GROUP",
-    "name": "logsGroup",
-    "displayName": "Logs Settings",
-    "groupStyle": "ZIPPY_CLOSED",
-    "subParams": [
-      {
-        "type": "RADIO",
-        "name": "logType",
-        "radioItems": [
-          {
-            "value": "no",
-            "displayValue": "Do not log"
-          },
-          {
-            "value": "debug",
-            "displayValue": "Log to console during debug and preview"
-          },
-          {
-            "value": "always",
-            "displayValue": "Always log to console"
-          }
-        ],
-        "simpleValueType": true,
-        "defaultValue": "debug"
-      }
-    ]
   }
 ]
 
@@ -186,13 +158,10 @@ ___SANDBOXED_JS_FOR_SERVER___
 
 const encodeUriComponent = require('encodeUriComponent');
 const getAllEventData = require('getAllEventData');
-const getContainerVersion = require('getContainerVersion');
 const getCookieValues = require('getCookieValues');
 const getEventData = require('getEventData');
 const getRequestHeader = require('getRequestHeader');
 const getType = require('getType');
-const JSON = require('JSON');
-const logToConsole = require('logToConsole');
 const makeString = require('makeString');
 const parseUrl = require('parseUrl');
 const sendHttpRequest = require('sendHttpRequest');
@@ -207,8 +176,6 @@ if (!isConsentGivenOrNotRequired(data, eventData)) {
   return data.gtmOnSuccess();
 }
 
-const isLoggingEnabled = determinateIsLoggingEnabled();
-const traceId = getRequestHeader('trace-id');
 const eventName = eventData.event_name;
 
 const PAGE_VIEW_EVENT = data.pageViewEvent || 'page_view';
@@ -258,36 +225,9 @@ switch (eventName) {
 
       requestUrl = requestUrl + '&sspdata=' + enc(token);
 
-      if (isLoggingEnabled) {
-        logToConsole(
-          JSON.stringify({
-            Name: 'Xandr',
-            Type: 'Request',
-            TraceId: traceId,
-            EventName: 'Conversion',
-            RequestMethod: 'GET',
-            RequestUrl: requestUrl
-          })
-        );
-      }
-
       sendHttpRequest(
         requestUrl,
         (statusCode, headers, body) => {
-          if (isLoggingEnabled) {
-            logToConsole(
-              JSON.stringify({
-                Name: 'Xandr',
-                Type: 'Response',
-                TraceId: traceId,
-                EventName: 'Conversion',
-                ResponseStatusCode: statusCode,
-                ResponseHeaders: headers,
-                ResponseBody: body
-              })
-            );
-          }
-
           if (statusCode >= 200 && statusCode < 300) {
             data.gtmOnSuccess();
           } else {
@@ -319,28 +259,6 @@ function isConsentGivenOrNotRequired(data, eventData) {
   if (eventData.consent_state) return !!eventData.consent_state.ad_storage;
   const xGaGcs = eventData['x-ga-gcs'] || ''; // x-ga-gcs is a string like "G110"
   return xGaGcs[2] === '1';
-}
-
-function determinateIsLoggingEnabled() {
-  const containerVersion = getContainerVersion();
-  const isDebug = !!(
-    containerVersion &&
-    (containerVersion.debugMode || containerVersion.previewMode)
-  );
-
-  if (!data.logType) {
-    return isDebug;
-  }
-
-  if (data.logType === 'no') {
-    return false;
-  }
-
-  if (data.logType === 'debug') {
-    return isDebug;
-  }
-
-  return data.logType === 'always';
 }
 
 
@@ -493,21 +411,6 @@ ___SERVER_PERMISSIONS___
                 "mapValue": [
                   {
                     "type": 1,
-                    "string": "trace-id"
-                  }
-                ]
-              },
-              {
-                "type": 3,
-                "mapKey": [
-                  {
-                    "type": 1,
-                    "string": "headerName"
-                  }
-                ],
-                "mapValue": [
-                  {
-                    "type": 1,
                     "string": "referer"
                   }
                 ]
@@ -589,37 +492,6 @@ ___SERVER_PERMISSIONS___
       "isEditedByUser": true
     },
     "isRequired": true
-  },
-  {
-    "instance": {
-      "key": {
-        "publicId": "logging",
-        "versionId": "1"
-      },
-      "param": [
-        {
-          "key": "environments",
-          "value": {
-            "type": 1,
-            "string": "all"
-          }
-        }
-      ]
-    },
-    "clientAnnotations": {
-      "isEditedByUser": true
-    },
-    "isRequired": true
-  },
-  {
-    "instance": {
-      "key": {
-        "publicId": "read_container_data",
-        "versionId": "1"
-      },
-      "param": []
-    },
-    "isRequired": true
   }
 ]
 
@@ -631,6 +503,8 @@ scenarios: []
 
 ___NOTES___
 
-Created on 10/11/2021, 09:29:27
+2026-05-25 Change Notes:
+ - Logging removal.
 
+Created on 10/11/2021, 09:29:27
 
